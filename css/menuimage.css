@@ -1,0 +1,227 @@
+.contenedormenu{
+width: 100%;
+margin: 0px auto;
+text-align: center;
+
+}
+
+.elementomenu{
+width: 225px;
+background: #fff;
+/*float: left;*/
+margin-right: 15px;
+margin-bottom: 20px;
+margin-top: 20px;
+box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+text-align: center;
+display: inline-block;
+opacity: 0.9;
+border: 10px solid #eee;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+ -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+
+    
+}
+
+
+.elementomenu:hover{
+	
+opacity: 1;
+-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+-webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+ transform: scale(1.1)
+  
+}
+
+
+
+
+
+
+.elementomenu p {
+padding: 5px;
+font-size: 15px;
+font-family: 'Arbutus Slab', serif;
+}
+
+.elementomenu img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.TituloMenuImage{
+	max-width: 100%;
+	font-size: 60px;
+	font-family: 'Audiowide', cursive;
+	background: #29d;
+	height: 100px;
+	padding-top: 5px;
+}
+
+.ContenedorGeneral{
+ text-align: center;
+ padding-top: 0px;
+ background: url("../imagenes/proto2.jpg") fixed; //Imagen de fondo
+ background-repeat:no-repeat; /* Indicamos que no se repetira */
+ background-size:cover; /* Encajamos la imagen al 100% del ancho */
+ background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+}
+
+
+/*.contenedormenu:hover .elementomenu img:not(:hover) {
+	opacity: 0.4;
+}*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px)
+{
+		.TituloMenuImage{
+		max-width: 100%;
+		font-size: 40px;
+		font-family: 'Audiowide', cursive;
+	}
+
+	
+
+}
+
+
+@media screen and (max-width:411px)
+{
+		.TituloMenuImage{
+		max-width: 100%;
+		font-size: 40px;
+		font-family: 'Audiowide', cursive;
+	}
+
+
+}
+
+
+
+
+
+/*////////////////////////////////////////////////*/
+
+
+.contenedormenu2{
+width: 100%;
+margin: 0px auto;
+text-align: center;
+
+}
+
+.elementomenu2{
+width: 225px;
+background: #fff;
+margin-right: 15px;
+margin-bottom: 20px;
+margin-top: 20px;
+box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+text-align: center;
+display: inline-block;
+opacity: 0.9;
+border: 10px solid #eee;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+ -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+}
+
+
+.elementomenu2:hover{
+	
+opacity: 1;
+-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+-webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+ transform: scale(1.1)
+  
+}
+
+
+
+
+.elementomenu2 p {
+padding: 5px;
+font-size: 15px;
+font-family: 'Arbutus Slab', serif;
+}
+
+.elementomenu2 img{
+  width: 100%;
+}
+
+.TituloMenuImage2{
+	max-width: 100%;
+	font-size: 60px;
+	font-family: 'Audiowide', cursive;
+	background: #29d;
+	height: 126px;
+	padding-top: 30px;
+}
+
+.ContenedorGeneral2{
+
+	 text-align: center;
+	 padding-top: 0px;
+	 background: url("../imagenes/proto1.jpg") fixed; //Imagen de fondo
+	 background-repeat:no-repeat; /* Indicamos que no se repetira */
+	 background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	 background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+
+}
+
+
+
+@media screen and (max-width:360px)
+{
+		.TituloMenuImage2{
+		max-width: 100%;
+		font-size: 40px;
+		font-family: 'Audiowide', cursive;
+	}
+
+
+}
+
+
+
+@media screen and (max-width:411px)
+{
+		.TituloMenuImage2{
+		max-width: 100%;
+		font-size: 40px;
+		font-family: 'Audiowide', cursive;
+	}
+
+
+}
+
+
+
+
+
+

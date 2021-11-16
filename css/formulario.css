@@ -1,0 +1,91 @@
+form{
+	width: 600px;
+	margin: auto;
+	/*background: rgba(0,0,0,0.2);*/
+	padding: 15px 20px;
+	box-sizing: border-box;
+	/*margin-top: 20px;*/
+	border-radius: 7px;
+	text-align: center;
+}
+
+h2{
+
+	color: #000;
+	text-align: center;
+	margin: 0;
+	font-size: 45px;
+	margin-bottom: 20px;
+	font-family: 'Audiowide', cursive;
+	
+
+}
+
+
+input, textarea{
+
+	width: 100%;
+	margin-bottom: 20px;
+	padding:7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	/*border: none;*/
+	border: solid 2px;
+}
+
+
+textarea{
+    
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+
+}
+
+#boton{
+	background: #31384A;
+	color: #fff;
+	padding: 20px;
+	border: solid 2px #000;
+}
+
+#boton:hover{
+	cursor: pointer;
+}
+
+
+@media (max-width: 480px){
+	form{
+	width: 100%
+	}
+
+h2{
+	font-size: 35px;
+}
+
+}
+
+@media (max-width: 320px){
+	form{
+	width: 100%
+	}
+
+h2{
+	font-size: 30px;
+}
+
+}
+
+
+
+.descripgracias{
+
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.ContenedorFormulario{
+background: #29d;
+
+}

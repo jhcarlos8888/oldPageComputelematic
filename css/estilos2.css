@@ -1,0 +1,583 @@
+/*Inicio de Configuracion general pagina Principal*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background: #29d;
+
+ 
+}
+/*Final de Configuracion general pagina Principal*/
+
+
+/*Inicio de Menu Principal no responsive*/
+.menu_bar{
+
+  display: none;
+
+}
+
+header{
+  width: 100%;
+  position: fixed; /*el header no tenia position fixed y tampoco zindex, se puso para que funcionara el menu responsive */
+  z-index: 1000;
+}
+
+header nav{
+background:#B5B4B4;
+z-index: 1000;
+width: 100%;
+}
+
+header nav ul{
+text-align: center;
+  list-style: none;
+}
+
+header nav ul li{
+display: inline-block;
+position: relative;
+}
+
+header nav ul li:hover{
+  /*background: #E6344A;*/
+  background: #29d;
+}
+
+header nav ul li a {
+  text-decoration: none;
+color:#fff;
+display:block;
+padding: 15px;
+font-family: 'Lato', sans-serif;
+font-size: 1em;
+}
+
+header nav ul li a span{
+  margin-right: 5px;
+  
+}
+
+header nav ul li:hover .children{
+display: block;
+}
+
+header nav ul li .children{
+  display: none;
+  background: #011826;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+header nav ul li .children li{
+display: block;
+overflow: hidden;
+border-bottom: 1px solid rgba(255,255,255, .5);
+}
+
+header nav ul li .children li a{
+  display: block;
+}
+
+header nav ul li .children li a span{
+  float:right;
+  position: relative;
+  top:3px;
+  margin-right:0;
+  margin-left: 10px;
+}
+
+header nav ul li .caret{
+position:relative;
+top:3px;
+margin-left: 10px;
+margin-right: 0px;
+}
+/*Final de Menu Principal no responsive*/
+
+
+
+/*Comienzo Code Menu Principal jqery Responsive*/
+@media screen and (max-width:800px)
+{
+
+  body{
+  padding-top: 80px;
+
+  }
+
+  .menu_bar{
+  display:block;
+  width:100%;
+  position: fixed;
+  top:0;
+  background: #E6344A;
+  background: #29d;
+  }
+
+  .menu_bar .bt-menu{
+  display: block;
+    padding: 25px;
+    color:#fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar span {
+  float: right;
+  font-size: 30px;
+  margin-left: 30px;
+  
+  }
+
+  header nav {
+  width: 80%;
+  height: calc(100% - 80px);
+  position: fixed;
+  right:100%;
+  margin:0;
+  overflow: scroll;
+  }
+
+  header nav ul li {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  header nav ul li a{
+    display: block;
+  }
+
+  header nav ul li:hover .children {
+  display: none;
+  }
+
+  header nav ul li .children{
+    width: 100%;
+    position: relative;
+  }
+
+  header nav ul li .children li a{
+    margin-left: 20px;
+  }
+
+  header nav ul li .caret{
+  float:right;
+
+  }
+
+}
+/*Fin Codigo Menu jqery menu responsive*/
+
+
+
+/* Inicio Configuracion Banner Pagina Principal*/
+
+
+/*Inicio Codigo NO REsponsive de Banner Pagina*/
+.bannerpagina{
+  padding-top: 20px;
+  background: url("../imagenes/espacio.jpg") fixed; //Imagen de fondo
+  max-height: 100%;
+  height: 180px; //altura del fondo
+  position: relative;
+  margin: 0 auto;
+  /*padding: 5%;*/
+  background-size: cover; //ajusta el fondo a la imagen
+}
+
+.bannerpagina img{
+  max-width: 100%;
+}
+
+.automaticimg{
+  max-width: 100%;
+}
+
+.bannerpagina ul{
+  text-align: center;
+  list-style: none;
+  max-width: 100%;
+}
+
+.bannerpagina ul li {
+  display: inline-block;
+   max-width: 100%;
+}
+
+.LetraComputelematic{
+ text-align: center;
+  font-size: 80px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive; 
+   color: #fff
+}
+
+.letradescrip{
+  font-size: 38px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+   color: #fff;
+
+}
+
+/*Final Codigo NO REsponsive de Banner Pagina*/
+
+/*Inicio Codigo REsponsive de Banner Pagina*/
+
+@media screen and (max-width:1200px)
+{
+
+.bannerpagina{
+  padding-top: 20px;
+  height: 180px;
+
+}
+
+}
+
+@media screen and (max-width:1100px)
+{
+
+.bannerpagina{
+  padding-top: 30px;
+  height: 310px;
+}
+
+}
+
+
+@media screen and (max-width:1000px)
+{
+
+.bannerpagina{
+  padding-top: 30px;
+  height: 310px;
+}
+
+}
+
+@media screen and (max-width:900px)
+{
+
+.bannerpagina{
+  padding-top: 30px;
+  height: 310px;
+}
+
+}
+
+
+
+
+@media screen and (max-width:800px)
+{
+
+.LetraComputelematic{
+   font-size: 70px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 38px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 20px;
+  height: 340px;
+}
+
+
+}
+
+
+@media screen and (max-width:700px)
+{
+
+.LetraComputelematic{
+   font-size: 60px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 38px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 20px;
+  height: 330px;
+}
+
+}
+
+
+@media screen and (max-width:600px)
+{
+
+.LetraComputelematic{
+   font-size: 50px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 38px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 15px;
+  height: 310px;
+}
+
+
+}
+
+
+@media screen and (max-width:500px)
+{
+
+.LetraComputelematic{
+   font-size: 38px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 25px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+
+.bannerpagina{
+  padding-top: 15px;
+  height: 260px;
+}
+
+
+}
+
+@media screen and (max-width:400px)
+{
+
+.LetraComputelematic{
+   font-size: 30px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 20px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 15px;
+  height: 240px;
+}
+
+
+}
+
+@media screen and (max-width:300px)
+{
+
+.LetraComputelematic{
+   font-size: 25px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 15px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 15px;
+  height: 220px;
+}
+
+
+}
+
+
+@media screen and (max-width:200px)
+{
+
+.LetraComputelematic{
+   font-size: 18px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.letradescrip{
+  font-size: 10px;
+   max-width: 100%;
+   font-family: 'Audiowide', cursive;
+
+}
+
+.bannerpagina{
+  padding-top: 10px;
+  height: 170px;
+}
+
+
+}
+
+/*Final Codigo REsponsive de Banner Pagina*/
+
+/* Final Configuracion Banner Pagina Principal*/
+
+
+/*Inicio Pie de pagina*/
+footer{
+  text-align:center;
+  background:#B5B4B4;
+  width:100%;
+  height: 150px;
+  bottom: 0;
+  position: relative;
+  color:#000;
+}
+
+footer ul li{
+display: inline-block;
+position: relative;
+padding-right: 10px;
+padding-top: 10px;
+font-family: 'Lato', sans-serif;
+font-size: 1.5em;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color:#000;
+  font-size: 40px;
+  }
+
+  footer ul li span{
+    padding-right: 3px;
+  }
+
+
+@media screen and (max-width:1234px)
+{
+
+footer{
+  height: 200px;
+ 
+}
+
+}
+
+
+@media screen and (max-width:960px)
+{
+
+footer{
+  height: 200px;
+ 
+}
+
+}
+
+@media screen and (max-width:768px)
+{
+
+footer{
+  height: 300px;
+ 
+}
+
+}
+
+
+@media screen and (max-width:435px)
+{
+
+footer{
+  height: 400px;
+ 
+}
+
+}
+
+@media screen and (max-width:411px)
+{
+
+footer{
+  height: 400px;
+
+}
+
+}
+
+
+@media screen and (max-width:360px)
+{
+
+footer{
+  height: 400px;
+}
+
+}
+
+
+/*Final Pie de pagina*/
+
+
+
+
+/*Codigo Contacto*/
+
+
+
+
+/*Inicio Fuentes Tipograficas*/
+.FontAudioWide{
+font-family: 'Audiowide', cursive;
+
+}
+
+.FontLato{
+font-family: 'Lato', sans-serif;
+}
+
+.FontArbutusSlab{
+ font-family: 'Arbutus Slab', serif;
+}
+/*Final Fuentes Tipograficas*/
